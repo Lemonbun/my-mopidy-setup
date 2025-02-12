@@ -18,9 +18,6 @@ RUN apt-get update \
                        libasound2-dev \
  && rm -rf /var/lib/apt/lists/*
 
-RUN wget -O gst-plugin-spotify.deb https://github.com/kingosticks/gst-plugins-rs-build/releases/download/gst-plugin-spotify_0.14.0-alpha.1-1/gst-plugin-spotify_0.14.0.alpha.1-1_${ARCH}.deb \
- && dpkg -i gst-plugin-spotify.deb
-
 COPY requirements.txt requirements.txt
 
 # RUN pip3 install -r requirements.txt \
