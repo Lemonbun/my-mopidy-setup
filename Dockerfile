@@ -26,7 +26,7 @@ RUN pip3 install --break-system-packages -r requirements.txt \
 
 RUN update-ca-certificates --fresh
 
-VOLUME ["/mnt/pibox2/data/mopidy", "/mnt/pibox1/music"]
+VOLUME ["/root/.cache/mopidy", "/root/.local/share/mopidy", "/root/music"]
 
 ENV TZ=Europe/London
 
