@@ -1,4 +1,4 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=balenalib/raspberrypi4-debian:latest
 ARG ARCH
 
 FROM $BUILD_FROM
